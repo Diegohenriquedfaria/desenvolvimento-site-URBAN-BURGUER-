@@ -1,90 +1,128 @@
 <!DOCTYPE html>
-<header>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
     <title>Urban Burguer</title>
     <link rel="stylesheet" href="style.css">
-    <script language="javascript" src="code.js"></script>
-</header>
-<header>
-    <h1><img src="imagens-cardapio-lanchonete/imagem-logo-horizontal.png" alt="Imagem Logo rincipal" width="7%" height="7%" id="imglogo"></h1>
-</header>
-<div class="regula">
+    <script src="app.js"></script>
+    <!-- Fonte de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
 <body>
+    <!-- LOGO -->
+    <header>
+        <h1>
+            <img src="imagens-cardapio-lanchonete/imagem-logo-horizontal.png" 
+                 alt="Imagem Logo Principal" width="7%" height="7%" id="imglogo">
+        </h1>
+    </header>
+
+    <!-- MENU -->
     <nav>
-        <a href="cardapio-lachonete-lancheprincipal.html">HAMBURGUERS</a>
-        <a href="cardapio-lanchonete-hotdogs.html">HOT DOGS</a>
-        <a href="cardapio-lanchonete-panquecas.html">PANQUECAS</a>
-        <a href="cardapio-lanchonete-bebidas.html">BEBIDAS</a>
-        <a href="cardapio-lanchonete-funcionamento.html">FUNCIONAMENTO</a>
-    </nav>
+    <a href="cardapio-lachonete-lancheprincipal.html">
+        <i class="fa-solid fa-burger"></i> HAMBURGUERS
+    </a>
+    <a href="cardapio-lanchonete-hotdogs.html">
+        <i class="fa-solid fa-hotdog"></i> HOT DOGS
+    </a>
+    <a href="cardapio-lanchonete-panquecas.html">
+        <i class="fa-solid fa-utensils"></i> PANQUECAS
+    </a>
+    <a href="cardapio-lanchonete-bebidas.html">
+        <i class="fa-solid fa-mug-soda"></i> BEBIDAS
+    </a>
+    <a href="cardapio-lanchonete-funcionamento.html">
+        <i class="fa-solid fa-clock"></i> FUNCIONAMENTO
+    </a>
+</nav>
+
+    <!-- BANNER -->
     <section class="banner-carda">
-    <h2 id="h2ham">CONHEÇA NOSSOS HAMBURGUERS</h2>
-    <div class="Imagens">
-        <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham2.jpg" alt="Burguer tradicional" width="25%" height="25%" >
-        <figcaption>
-             <p> <h2>Hambúrguer Tradicional</h2><br>Um hambúrguer leve e equilibrado servido com hamburguer 180 gr, molho artezanal , trazendo frescor e sabor. Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 25,00</p>
-        </figcaption>
+        <h2 id="h2ham">CONHEÇA NOSSOS HAMBURGUERS</h2>
 
-    </figure>
-    <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham3.jpg" alt="Burguer salada" width="25%" height="30%">
-        <figcaption>
-            <p> <h2>Hambúrguer Salada</h2><br>Um hambúrguer leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada, trazendo frescor e sabor. Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 22,00</p>
-        </figcaption>
-    </figure>
-    </div>
-     <div class="I2">
-         <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham4.jpg" alt="Burguer calabresa" width="25%" height="25%">
-        <figcaption>
-            <p> <h2>Hambúrguer Calabresa</h2><br>Um hambúrguer leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada,duplo calabresa trazendo frescor e sabor.Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 32,00</p>
-        </figcaption>
-    </figure>
-        <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham5.jpg" alt="Burguer frango" width="25%" height="25%">
-        <figcaption>
-            <p> <h2>Hambúrguer Frango</h2><br>Um hambúrguer  de frango leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada, trazendo frescor e sabor.Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 31,00</p>
-        </figcaption>
-    </figure>
-    </div>
-     <div class="I3">
-        <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham6.jpg" alt="Burguer Duplo quiejo" width="25%" height="25%">
-        <figcaption>
-            <p> <h2>Hambúrguer Duplo Queijo</h2><br>Um hambúrguer leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada,duplo queijo trazendo frescor e sabor.Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 28,00</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="imagens-cardapio-lanchonete/imagemham7.jpg" alt="Burguer Onion " width="25%" height="25%">
-        <figcaption>
-            <p> <h2>Hambúrguer Onion</h2><br>Um hambúrguer leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada,duplo cebola empanada trazendo frescor e sabor.Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
-        </figcaption>
-        <figcaption>
-            <p id="a">R$ 36,00</p>
-        </figcaption>
-    
+        <!-- LINHA 1 -->
+        <div class="Imagens">
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham2.jpg" alt="Burguer tradicional" width="25%" height="25%">
+                <figcaption>
+                    <h2>Hambúrguer Tradicional</h2>
+                    <p>Um hambúrguer leve e equilibrado servido com 180g de carne, molho artesanal, trazendo frescor e sabor. Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 25,00</p></figcaption>
+            </figure>
 
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham3.jpg" alt="Burguer salada" width="25%" height="30%">
+                <figcaption>
+                    <h2>Hambúrguer Salada</h2>
+                    <p>Um hambúrguer leve e equilibrado servido com alface crocante, tomate fresco e cebola roxa fatiada. Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 22,00</p></figcaption>
+            </figure>
+        </div>
+
+        <!-- LINHA 2 -->
+        <div class="I2">
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham4.jpg" alt="Burguer calabresa" width="25%" height="25%">
+                <figcaption>
+                    <h2>Hambúrguer Calabresa</h2>
+                    <p>Servido com alface, tomate fresco, cebola roxa fatiada e dupla calabresa. Tudo isso no pão macio, acompanhado de um molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 32,00</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham5.jpg" alt="Burguer frango" width="25%" height="25%">
+                <figcaption>
+                    <h2>Hambúrguer Frango</h2>
+                    <p>Um hambúrguer de frango servido com alface crocante, tomate fresco e cebola roxa fatiada. Tudo no pão macio, com molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 31,00</p></figcaption>
+            </figure>
+        </div>
+
+        <!-- LINHA 3 -->
+        <div class="I3">
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham6.jpg" alt="Burguer Duplo queijo" width="25%" height="25%">
+                <figcaption>
+                    <h2>Hambúrguer Duplo Queijo</h2>
+                    <p>Servido com alface, tomate fresco, cebola roxa fatiada e dupla camada de queijo. Tudo no pão macio, com molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 28,00</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens-cardapio-lanchonete/imagemham7.jpg" alt="Burguer Onion" width="25%" height="25%">
+                <figcaption>
+                    <h2>Hambúrguer Onion</h2>
+                    <p>Servido com alface, tomate fresco, cebola roxa fatiada e cebolas empanadas crocantes. Tudo no pão macio, com molho especial da casa.</p>
+                </figcaption>
+                <figcaption><p id="a">R$ 36,00</p></figcaption>
+            </figure>
+        </div>
     </section>
-    
-</body>
-</div>
-<footer>
-    <h3  id="textfooter"> Todos os direitos reservados á Diego Henrique de Faria</h3>
-</footer>
 
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="background">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#0e121c" fill-opacity="1"
+                    d="M0,192L60,208C120,224,240,256,360,245.3C480,235,600,181,720,154.7C840,128,960,128,1080,149.3C1200,171,1320,213,1380,234.7L1440,256L1440,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <section>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p class="textfooter">© Todos os direitos reservados a Diego Henrique de Faria</p>
+        </section>
+    </footer>
+</body>
+</html>

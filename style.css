@@ -1,9 +1,15 @@
 body{
-    background-color:#f3d387;
-    min-height: 100vh;
+    background:linear-gradient(to bottom, #fff , #f2f2f2);
+    color:#222;
     margin: 0px;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif; 
 }
+h1{
+    color: #f3d387;
+    font-family: 'Roboto', sans-serif; 
+}
+
 header{
     background-color:#5a2b14;
     align-items: center;
@@ -22,6 +28,24 @@ img{
 nav{
     padding: 12px;
 }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* espaço entre ícone e texto */
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav i {
+  font-size: 18px; /* tamanho dos ícones */
+}
 nav,a{
     justify-content: center;
     justify-items: center;
@@ -38,15 +62,96 @@ h2{
     text-decoration: double;  
     color: #9C2E26;  
 }
+
+
+
+/* BANNER */
+.banner-carda {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner-carda h2 {
+  margin-bottom: 30px;
+}
+
+/* PRODUTOS */
+.Imagens, .I2, .I3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+figure {
+  text-align: center;
+  max-width: 300px;
+}
+
+figure img {
+  border-radius: 12px;
+}
+
+figure h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+figure p#a {
+  font-weight: bold;
+  color: #f1efef;
+}
+
+/* FOOTER */
 footer {
-    background-color: #5a2b14;
-    color: #fef3e0;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    padding-top: 10px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
+  position: relative;
+  background:#5a2b14;
+  color: #2e2f31;
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+
+footer .background svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.socials a {
+  font-size: 20px;
+  background: rgba(235, 181, 7, 0.1);
+  backdrop-filter: blur(6px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #d6dfed;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: rgba(233, 172, 4, 0.25);
+  color: white;
+}
+
+.textfooter {
+  font-size: 12px;
+  color: #a2b6e1;
 }
 
 a{
@@ -56,21 +161,21 @@ a:hover{
     color:#f3af0f;
 }
 #textfooter{
-    color: #fef3e0;
+    color:#272625
 }
 .I2{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    padding: 200px;
+    padding: 100px;
 }
 .I3{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    padding: 200px;
+    padding: 100px;
 }
 .I3 figure{
     width: 30%;
@@ -88,9 +193,9 @@ a:hover{
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
     padding-top: 0px;
 }
 .I6 figure{
@@ -109,7 +214,7 @@ a:hover{
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    padding: 200px;
+    padding: 100px;
 }
 .I4 figure{
     width: 30%;
@@ -138,7 +243,7 @@ a:hover{
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    padding: 200px;
+    padding: 100px;
 }
 .I5 figure{
     width: 30%;
@@ -158,7 +263,7 @@ a:hover{
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    padding: 200px;
+    padding: 100px;
 }
 .Imagens figure{
     width: 30%;
@@ -190,5 +295,27 @@ a:hover{
 img:hover{
     background-color: #f3af0f;
 }
+figure img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
 
+/* Efeito ao passar o mouse */
+figure img:hover {
+  transform: scale(1.1) rotate3d(1, 1, 0, 8deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+figure h2, 
+figure p {
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+figure h2:hover, 
+figure p:hover {
+  transform: scale(1.05) rotate3d(1, 0, 0, 6deg);
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.4);
+}
 
